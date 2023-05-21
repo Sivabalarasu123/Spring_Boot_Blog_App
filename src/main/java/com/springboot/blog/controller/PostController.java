@@ -30,6 +30,7 @@ public class PostController
 	public ResponseEntity<PostDto> createPost(@RequestBody PostDto postDto)
 	{
 		return new ResponseEntity<PostDto>(postService.createPost(postDto),HttpStatus.CREATED );
+		
 	}
 
 	@GetMapping
